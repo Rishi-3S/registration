@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h2>Register</h2>
+        </div>
+        <form action="register" class="form">
+            <table>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm-password">Confirm Password</label></td>
+                    <td><input type="password" id="confirm-password" name="confirm-password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="india">India</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="australia">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="btn">Register</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
